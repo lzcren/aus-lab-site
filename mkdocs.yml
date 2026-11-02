@@ -1,0 +1,64 @@
+site_name: AUS-LAB | 无人系统与控制实验室
+site_url: https://aus-lab.com
+site_description: 飞控、MPC、状态估计、智能决策、自动驾驶仿真笔记站
+site_author: 吕志超
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+# LaTeX数学公式支持
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 智能决策:
+      - MCTS + level-K: mcts-levelk.md
+      - 不确定状态决策: uncertainty-decision.md
+  - 理论基础:
+      - 最优化方法: optimization.md
+      - 状态估计 & 概率机器人: state-estimation.md
+      - 控制导论: control-intro.md
+  - 开发工具:
+      - ROS笔记: ros-notes.md
+      - C++ & Python: cpp-python.md
+      - RLbook 阅读笔记: rlbook.md
+  - 飞控与硬件:
+      - PX4: px4-notes.md
+      - F570控制系统调试: f570-debug.md
+      - 风洞/飞控试验: flight-experiment.md
+  - 仿真平台:
+      - Carla API: carla-api.md
+      - Carla系统开发: carla-dev.md
+  - 其他:
+      - 汽车理论: vehicle-theory.md
+      - 项目Demo: demo.md

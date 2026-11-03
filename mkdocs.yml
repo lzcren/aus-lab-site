@@ -46,7 +46,10 @@ nav:
       - 主要研究内容: wqmcontent.md
   - 吕志超:
       - 个人简介: lzc.md
-      - 主要研究内容: lzccontent.md
+      - 主要研究方向-状态估计: lzccontent1.md
+      - 主要研究方向-最优化方法: lzccontent2.md
+      - 主要研究方向-控制理论: lzccontent3.md
+      - 主要研究方向-航天器飞控与制导: lzccontent4.md
   - 王泽铭:
       - 个人简介: wzm.md
       - 主要研究内容: wzmcontent.md
